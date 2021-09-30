@@ -88,13 +88,13 @@ defaults:
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
-title: "Andrea picciau" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+title: "Andrea Picciau" # Site name or title, also used in jekyll-seo-tag
+logo: "/assets/logos/android-chrome-384x384.png" # Site logo, also used in jekyll-seo-tag
 description: "I work on software for scientific computing, data science, and deep learning." # Site description and default description, also used in jekyll-seo-tag
 url: "https://andpic.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/apicciau/andpic.github.io"
-email: "andrea@picciau.net"
+email: "apicciau@mail.com"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
 # google_analytics: ""
@@ -107,16 +107,13 @@ css_inline: true # Will insert all styles into a single <style> block in the <he
 favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
   16: "/assets/logos/favicon-16x16.png"
   32: "/assets/logos/favicon-32x32.png"
-  70: "/assets/logos/mstile-70x70.png"
-  144: "/assets/logos/mstile-144x144.png"
   150: "/assets/logos/mstile-150x150.png"
-  192: "/assets/logos/mstile-192x192.png"
-  210: "/assets/logos/mstile-310x310.png"
-  512: "/assets/logos/android-chrome-512x512.png"
+  192: "/assets/logos/android-chrome-192x192.png"
+  384: "/assets/logos/android-chrome-384x384.png"
 
 # 9. Site navigation
 navigation_header:
-  - title: Home
+  - title: About me
     url: /
   - title: Projects
     url: /projects/
@@ -124,18 +121,16 @@ navigation_header:
     url: /publications/
   - title: Notes
     url: /notes/
-  - title: Search
-    url: /search/
 
 navigation_footer:
-  - title: Theme based on "Alembic" by David Darnes
-    url: https://darn.es
+  - title: "The views expressed here are my own and do not necessarily reflect the views of my employer."
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   Twitter: https://twitter.com/a_picciau
   LinkedIn: https://www.linkedin.com/in/apicciau
   GitHub: https://github.com/andpic
   link: https://picciau.net
+  ResearchGate: https://www.researchgate.net/profile/Andrea-Picciau
   RSS: /feed.xml
 
 sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
@@ -152,3 +147,6 @@ fonts:
     - https://fonts.gstatic.com
   font_urls:
     - https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap
+
+# Language settings
+lang: en

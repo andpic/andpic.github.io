@@ -68,6 +68,8 @@ a {
 
   .feature_text {
     color: $pictureTextColour;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
   }
 
   // Heading level 1.
