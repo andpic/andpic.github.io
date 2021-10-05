@@ -1,0 +1,28 @@
+# Multilingual website, following https://matthewlincoln.net/2020/03/01/multilingual-jekyll.html
+language-list:
+  - en
+  - it
+  - srd
+
+menu-lang:
+  en: English
+  it: Italiano
+  srd: Sardu
+
+page_titles:
+  about-me:
+    en: "About me"
+    it: "Chi sono"
+    srd: "Chini seu"
+  projects:
+    en: "Projects"
+    it: "Progetti"
+    srd: "Fainas"
+  publications:
+    en: "Publications"
+    it: "Pubblicazioni"
+    srd: "Pubricatzionis"
+  notes:
+    en: "Notes"
+    it: "Note"
+    srd: "Notas"

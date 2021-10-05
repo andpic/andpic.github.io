@@ -84,10 +84,22 @@ defaults:
       type: "pages"
     values:
       layout: page # Set the default layout for pages
+  - scope:
+      path: "en"
+    values:
+      lang: "en" # Set the default language for pages
+  - scope:
+      path: "it"
+    values:
+      lang: "it" # Set the default language for pages
+  - scope:
+      path: "srd"
+    values:
+      lang: "srd" # Set the default language for pages
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
-lang: en-GB # Set the site language
+lang: en # Set the site language
 title: "Andrea Picciau" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/android-chrome-384x384.png" # Site logo, also used in jekyll-seo-tag
 description: "I work on software for scientific computing, data science, and deep learning." # Site description and default description, also used in jekyll-seo-tag
@@ -113,13 +125,13 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
 
 # 9. Site navigation
 navigation_header:
-  - title: About me
+  - translation_reference: about-me
     url: /
-  - title: Projects
+  - translation_reference: projects
     url: /projects/
-  - title: Publications
+  - translation_reference: publications
     url: /publications/
-  - title: Notes
+  - translation_reference: notes
     url: /notes/
 
 navigation_footer:
@@ -147,6 +159,3 @@ fonts:
     - https://fonts.gstatic.com
   font_urls:
     - https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap
-
-# Language settings
-lang: en

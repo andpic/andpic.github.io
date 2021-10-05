@@ -25,7 +25,9 @@ a {
   text-decoration: none;
   transition: color .1s, background-color .1s;
 
-  &:hover, &:active, &:focus {
+  &:hover,
+  &:active,
+  &:focus {
     color: $hoverColour;
     text-decoration: none;
   }
@@ -35,18 +37,21 @@ a {
 .typeset {
 
   // Nice underlines for text links.
-  p a, li a {
-    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,$linkColour 50%);
+  p a,
+  li a {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, $linkColour 50%);
     background-position: 0 93%;
     background-repeat: repeat-x;
     background-size: 100% 0.15rem;
     text-shadow: 0.1rem 0 $backgroundColour,
-                 0.15rem 0 $backgroundColour,
-                -0.1rem 0 $backgroundColour,
-                -0.15rem 0 $backgroundColour;
+      0.15rem 0 $backgroundColour,
+      -0.1rem 0 $backgroundColour,
+      -0.15rem 0 $backgroundColour;
 
-    &:hover, &:active, &:focus {
-      background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,$hoverColour 50%);
+    &:hover,
+    &:active,
+    &:focus {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, $hoverColour 50%);
     }
   }
 
@@ -58,7 +63,12 @@ a {
   }
 
   // Headings. OpenType ligatures, discretionary ligatures and lining figures enabled if available.
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: $headingColour;
     font-family: unquote(map-get($headingtype, font-family));
     font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
@@ -70,40 +80,49 @@ a {
     color: $pictureTextColour;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   // Heading level 1.
-  h1, .alpha {
+  h1,
+  .alpha {
     @include sassline($fontsize: alpha, $font: $headingtype, $lineheight: 3, $below: 1, $breakpoint: all);
   }
 
   // Heading level 2.
-  h2, .beta {
+  h2,
+  .beta {
     @include sassline(beta, $headingtype, 3, 1, all);
   }
 
   // Heading level 3.
-  h3, .gamma {
+  h3,
+  .gamma {
     @include sassline(gamma, $headingtype, 3, 1, all);
   }
 
   // Heading level 4.
-  h4, .delta {
+  h4,
+  .delta {
     @include sassline(delta, $headingtype, 2, 0, all);
   }
 
   // Heading level 5.
-  h5, .epsilon {
+  h5,
+  .epsilon {
     @include sassline(epsilon, $headingtype, 2, 0, all);
   }
 
   // Heading level 6.
-  h6, .zeta {
+  h6,
+  .zeta {
     @include sassline(zeta, $headingtype, 2, 0, all);
   }
 
   // Lists.
-  ul, ol {
+  ul,
+  ol {
     @include baseline(zeta, $bodytype, 2, 2, all);
 
     li {
@@ -114,7 +133,8 @@ a {
         margin-left: 0;
       }
 
-      ol, ul {
+      ol,
+      ul {
         padding-top: 1rem;
         margin-bottom: 1rem;
         margin-left: 2rem;
@@ -165,7 +185,7 @@ a {
           counter-increment: sub-level;
 
           &:before {
-            content: counter(top-level) '.' counter(sub-level);
+            content: counter(top-level) '.'counter(sub-level);
           }
 
           ul {
@@ -184,7 +204,7 @@ a {
               counter-increment: sub-sub-level;
 
               &:before {
-                content: counter(top-level) '.' counter(sub-level) '.' counter(sub-sub-level);
+                content: counter(top-level) '.'counter(sub-level) '.'counter(sub-sub-level);
               }
             }
           }
@@ -197,7 +217,8 @@ a {
   dl {
     @include baseline(zeta, $bodytype, 2, 2, all);
 
-    dt, dd {
+    dt,
+    dd {
       font-feature-settings: 'kern', 'onum', 'liga';
       margin-left: 2rem;
 
@@ -210,7 +231,7 @@ a {
       font-weight: map-get($bodytype, bold);
     }
 
-    dd + dt {
+    dd+dt {
       padding-top: 1rem;
     }
   }
@@ -235,17 +256,22 @@ a {
   }
 
   // Bold.
-  b, strong, .bold {
+  b,
+  strong,
+  .bold {
     font-weight: map-get($bodytype, bold);
   }
 
   // Italic.
-  em, i, .italic {
+  em,
+  i,
+  .italic {
     font-style: map-get($bodytype, italic);
   }
 
   // Caption and inline small text.
-  small, .caption {
+  small,
+  .caption {
     @include fontsize(theta, all);
 
     font-family: unquote(map-get($headingtype, font-family));
@@ -264,11 +290,18 @@ a {
   }
 
   // Nice spacing for captions.
-  h1 + .caption, .alpha + .caption, h2 + .caption, .beta + .caption, h3 + .caption, .gamma + .caption {
+  h1+.caption,
+  .alpha+.caption,
+  h2+.caption,
+  .beta+.caption,
+  h3+.caption,
+  .gamma+.caption {
     margin-top: -1rem;
   }
 
-  .delta + .caption, .epsilon + .caption, .zeta + .caption {
+  .delta+.caption,
+  .epsilon+.caption,
+  .zeta+.caption {
     margin-top: 0rem;
   }
 
@@ -297,7 +330,7 @@ a {
         $baseline-shift: #{($get-size / 2 * ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))) / $rootsize + 0.00001};
         $baseline-push: #{3 - (($get-size * ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))) / $rootsize + 0.00001)};
 
-        @media screen and (min-width: nth($points, $i) / 16 * 1em ) {
+        @media screen and (min-width: nth($points, $i) / 16 * 1em) {
           margin-bottom: #{$baseline-push}rem;
           padding-bottom: #{$baseline-shift}rem;
         }
@@ -311,7 +344,7 @@ a {
 
   // Horizontal rule.
   hr {
-    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,$captionColour 50%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, $captionColour 50%);
     background-position: 0 50%;
     background-repeat: repeat-x;
     background-size: 100% 0.15rem;
@@ -322,7 +355,8 @@ a {
   }
 
   // Code block.
-  code, pre {
+  code,
+  pre {
     background-color: $codeBackgroundColour;
     font-family: unquote(map-get($monospacetype, font-family));
   }

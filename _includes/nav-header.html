@@ -1,54 +1,89 @@
 {% if site.navigation_header %}
-<nav class="nav  nav--header">
-  <ul class="list  list--nav">
-    {% for item in site.navigation_header %}
+  <nav id="page-menu">
+    {% if site.logo %}{% include site-logo.html %}{% endif %}
+      
+    <ul class="list  list--nav">
+      {% for item in site.navigation_header %}
 
-      {% if item.url contains '://' %}
-        {% assign url = item.url %}
-      {% else %}
-        {% assign url = item.url | relative_url %}
-      {% endif %}
+        {% assign item_url = item.url | prepend: page.lang %}
+        {% assign item_title = site.data.snippets.page_titles[item.translation_reference][page.lang] %}
 
-      <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
-        <a href="{{ url }}">{{ item.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-  <button class="button  button--nav" aria-label="Menu toggle">
-    {% include icon.html id="nav" title="Menu" %}
-  </button>
-</nav>
+        {% if item.url contains '://' %}
+          {% assign url = item_url %}
+        {% else %}
+          {% assign url = item_url | relative_url %}
+        {% endif %}
+
+        <li class="item item--nav{% if item_url == page.url %} item--current{% endif %}">
+          <a href="{{ url }}">{{ item_title }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    <button aria-label="Menu toggle" class="button  button--nav">
+      {% include icon.html id="nav" title="Menu" %}
+    </button>
+  </nav>
+
+  <div aria-label="Language selector" class="btn-group" role="group">
+    {% include translation-links.html %}
+    {% assign all_translations = translation_candidates | push: translation_source %}
+
+      {% for lang in site.data.snippets.language-list %}
+        {% assign language_name = site.data.snippets.menu-lang[lang] %}
+
+        {% if page.lang == lang %}
+          <a
+            aria-pressed="true"
+            class="btn btn-secondary nav-link active disabled"
+            role="button">{{ language_name }}</a>
+        {% else %}
+          {% assign alternate_target = all_translations | where: "lang", lang | first %}
+
+          {% if alternate_target %}
+            <a class="btn btn-secondary nav-link" role="button" href="{{ alternate_target.url }}">{{ language_name }}</a>
+          {% else %}
+            {% assign new_page_url = page.url | replace_first: page.lang, lang %}
+            <a class="btn btn-secondary nav-link" role="button" href="{{ new_page_url }}">{{ site.data.snippets.menu-lang[lang] }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
 {% else %}
   {% include nav-default.html %}
 {% endif %}
 
 <script type="text/javascript">
   // Get list and button
-  const navList = document.querySelector('.header .list--nav')
-  const button  = document.querySelector('.header .button--nav')
+  const navList = document.querySelector(".header .list--nav");
+  const button = document.querySelector(".header .button--nav");
 
   // Hide nav and apply toggle
   const collapseNav = () => {
     if (document.body.clientWidth < 640) {
-      navList.style.setProperty('--listHeight', `-${navList.offsetHeight}px`)
+      navList.style.setProperty("--listHeight", `-${
+        navList.offsetHeight
+      }px`);
     } else {
-      navList.removeAttribute('style')
+      navList.removeAttribute("style");
     }
 
     button.onclick = () => {
-      navList.style.setProperty('transition', `margin .1s`)
-      if (navList.style.getPropertyValue('--listHeight')) {
-        navList.style.removeProperty('--listHeight')
+      navList.style.setProperty("transition", `margin .1s`);
+      if (navList.style.getPropertyValue("--listHeight")) {
+        navList.style.removeProperty("--listHeight");
       } else {
-        navList.style.setProperty('--listHeight', `-${navList.offsetHeight}px`)
+        navList.style.setProperty("--listHeight", `-${
+          navList.offsetHeight
+        }px`);
       }
     }
   }
 
-  collapseNav()
+  collapseNav();
 
   // Check on resize if to collapse nav
-  window.addEventListener('resize', () => {
-    collapseNav()
-  })
+  window.addEventListener("resize", () => {
+    collapseNav();
+  });
 </script>

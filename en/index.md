@@ -1,6 +1,6 @@
 ---
-title: About me 
-feature_image: assets/feature/feature_9.png
+title: About me
+feature_image: ../assets/feature/feature_9.png
 ---
 
 My name's Andrea Picciau (it's pronounced _pee-cha-hu_, with the stress on the

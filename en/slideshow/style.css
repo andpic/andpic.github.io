@@ -1,0 +1,65 @@
+@font-face {
+    font-family: CMUBright;
+    src: url(cmunbmr.woff);
+}
+
+@font-face {
+    font-family: CMUBrightBold;
+    src: url(cmunbbx.woff);
+}
+
+#whole-screen {
+    background-color: black;
+}
+
+#background-area {
+    position: fixed; 
+    width: 100%;
+    height: 100%; 
+}
+
+#slide {
+    position: absolute; 
+    top: 0; 
+    left: calc(0.6*100vw/100vh); 
+    right: 0; 
+    bottom: 0;
+    height: 100vh;		/* Height is 100% of the window's height 	*/
+    width: 133vh;		/* Width scales to a 4:3 ratio			*/
+}
+
+#background-area .text-block {
+    position: absolute;
+    bottom: 10vh;
+    width: 50vh;
+    left: 0px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(100, 100, 100, 0.3);
+}
+
+#background-area .text-block span {
+    color: white;
+    font-family: CMUBright;
+    font-size: 1.7vh;
+}
+
+#qr {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 7vh; 
+    height: 7vh; 
+}
+
+h2 {
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    color: white;
+    font-family: CMUBrightBold;
+    font-size: 3vh;
+}
+
+b {
+    font-family: CMUBrightBold;
+}
