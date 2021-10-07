@@ -9,20 +9,44 @@ menu-lang:
   it: Italiano
   srd: Sardu
 
-page_titles:
+menu_entries:
   about-me:
-    en: "About me"
-    it: "Chi sono"
-    srd: "Chini seu"
+    en:
+      title: "About me"
+      url: index.html
+    it:
+      title: "Chi sono"
+      url: "/it/chi-sono"
+    srd:
+      title: "Chini seu"
+      url: "/srd/chini-seu"
   projects:
-    en: "Projects"
-    it: "Progetti"
-    srd: "Fainas"
+    en:
+      title: "Projects"
+      url: "/en/projects"
+    it:
+      title: "Progetti"
+      url: "/it/progetti"
+    srd:
+      title: "Fainas"
+      url: "/srd/fainas"
   publications:
-    en: "Publications"
-    it: "Pubblicazioni"
-    srd: "Pubricatzionis"
+    en:
+      title: "Publications"
+      url: "/en/publications"
+    it:
+      title: "Pubblicazioni"
+      url: "/it/pubblicazioni"
+    srd:
+      title: "Pubricatzionis"
+      url: "/srd/pubricatzionis"
   notes:
-    en: "Notes"
-    it: "Note"
-    srd: "Notas"
+    en:
+      title: "Notes"
+      url: "/en/notes"
+    it:
+      title: "Note"
+      url: "/it/note"
+    srd:
+      title: "Notas"
+      url: "/srd/notas"

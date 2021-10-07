@@ -1,6 +1,6 @@
 ---
 title: Publications
-feature_image: ../assets/feature/feature_1.png
+feature_image: feature_1.png
 aside: true
 ---
 

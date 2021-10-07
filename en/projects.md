@@ -1,6 +1,6 @@
 ---
 title: Projects
-feature_image: ../assets/feature/feature_12.png
+feature_image: feature_12.png
 aside: true
 ---
 

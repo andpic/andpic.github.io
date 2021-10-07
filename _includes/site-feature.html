@@ -6,7 +6,7 @@
 {% endif %}
 
 {% if feature_image %}
-  <div class="feature" {% if feature_image %} style="background-image: url({{ feature_image }})" {% endif %}>
+  <div class="feature" {% if feature_image %} style="background-image: url({{ feature_image | prepend: '/assets/features/' | prepend: site.url }})" {% endif %}>
     <div class="container  typeset">
       <h2 class="feature_text">{{ page.title }}</h2>
     </div>
