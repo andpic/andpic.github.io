@@ -2,7 +2,7 @@
 title: Grazie!
 indexing: false
 sitemap: false
-orig: thanks
+reference: thanks
 ---
 
 Grazie per avermi contattato! Ti risponderò il prima possibile.

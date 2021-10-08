@@ -2,7 +2,7 @@
 title: Fainas
 feature_image: feature_12.png
 aside: true
-orig: projects
+reference: projects
 ---
 
 ## AMSLA

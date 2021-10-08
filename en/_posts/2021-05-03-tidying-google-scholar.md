@@ -3,6 +3,7 @@ title: "Tidying up my Google Scholar queries"
 categories: 
     - Literature
     - Computational sustainability
+reference: tidying-google-scholar
 ---
 
 Lately, I've realised that the diversity of my reads since the start of the

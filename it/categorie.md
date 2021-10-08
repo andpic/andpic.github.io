@@ -3,5 +3,5 @@ title: Categorie
 layout: categories
 excerpt: "Indice delle categorie"
 aside: true
-orig: categories
+reference: categories
 ---

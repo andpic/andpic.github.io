@@ -2,7 +2,7 @@
 title: Gràtzias!
 indexing: false
 sitemap: false
-orig: thanks
+reference: thanks
 ---
 
 Gràtzias po m' ai cuntatau! Apu a arrespundi comenti fait.

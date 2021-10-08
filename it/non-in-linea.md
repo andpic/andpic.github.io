@@ -2,7 +2,7 @@
 title: Non in linea
 indexing: false
 sitemap: false
-orig: offline
+reference: offline
 ---
 
 It appears that you've lost your network connection and this document doesn't exist on your device.

@@ -1,7 +1,7 @@
 ---
 title: Cerca
 excerpt: "Cerca una pagina o post"
-orig: search
+reference: search
 ---
 
 {% include site-search.html %}

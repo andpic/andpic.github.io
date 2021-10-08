@@ -7,17 +7,18 @@
     <ul class="list  list--nav">
       {% for item in site.navigation_header %}
 
-        {% assign item_title = site.data.snippets.menu_entries[item][page.lang].title %}
-        {% assign item_url = site.data.snippets.menu_entries[item][page.lang].url %}
+        {% assign pages_curr_reference = site.pages | where: "reference", item %}
+        {% assign page_to_link = pages_curr_reference | where: "lang", page.lang | first %}
 
         {% if item.url contains '://' %}
-          {% assign url = item_url %}
+          {% assign url = page_to_link.url %}
         {% else %}
-          {% assign url = item_url | relative_url %}
+          {% assign url = page_to_link.url | relative_url %}
         {% endif %}
 
-        <li class="item item--nav{% if item_url == page.url %} item--current{% endif %}">
-          <a href="{{ url }}">{{ item_title }}</a>
+        <li class="item item--nav{% if page_to_link.url == page.url %} item--current{% endif
+            %}">
+          <a href="{{ url }}">{{ page_to_link.title }}</a>
         </li>
       {% endfor %}
     </ul>
@@ -27,8 +28,12 @@
   </nav>
 
   <div aria-label="Language selector" class="btn-group" role="group">
-    {% include translation-links.html %}
-    {% assign all_translations = translation_candidates | push: translation_source %}
+    {% if page.reference %}
+      {% assign translation_candidates = site.pages | where: "reference", page.reference %}
+      {% if translation_candidates.size == 0 %}
+        {% assign translation_candidates = site.posts | where: "reference", page.reference %}
+      {% endif %}
+    {% endif %}
 
     {% for lang in site.data.snippets.language-list %}
       {% assign language_name = site.data.snippets.menu-lang[lang] %}
@@ -39,7 +44,7 @@
           class="btn btn-secondary nav-link active disabled"
           role="button">{{ language_name }}</a>
       {% else %}
-        {% assign alternate_target = all_translations | where: "lang", lang | first %}
+        {% assign alternate_target = translation_candidates | where: "lang", lang | first %}
         {% if alternate_target %}
           <a class="btn btn-secondary nav-link" role="button" href="{{ alternate_target.url }}">{{ language_name }}</a>
         {% endif %}

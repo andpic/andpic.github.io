@@ -2,7 +2,7 @@
 title: Pubricatzionis
 feature_image: feature_1.png
 aside: true
-orig: publications
+reference: publications
 ---
 
 **A. Picciau**. Concurrency and data locality for sparse linear algebra on

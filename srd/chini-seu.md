@@ -1,7 +1,7 @@
 ---
 title: Chini seu
 feature_image: feature_9.png
-orig: about-me
+reference: about-me
 ---
 
 Mi nant Andrea Picciau e traballu cun programas po su càrculu scientìficu e

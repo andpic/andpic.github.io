@@ -1,7 +1,7 @@
 ---
 title: Chi sono
 feature_image: assets/feature/feature_9.png
-orig: about-me
+reference: about-me
 ---
 
 My name's Andrea Picciau (it's pronounced _pee-cha-hu_, with the stress on the

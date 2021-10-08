@@ -1,7 +1,7 @@
 ---
 title: Circa
 excerpt: "Circa una pàgina o un' artìculu"
-orig: search
+reference: search
 ---
 
 {% include site-search.html %}

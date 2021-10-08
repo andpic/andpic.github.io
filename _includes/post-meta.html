@@ -18,16 +18,4 @@
 <small class="small  post-meta">
   {% assign date_format = site.date_format | default: "%d %b %Y" %}
   {{ categories | append: "&nbsp;&middot;&nbsp;" }}<time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date: date_format }}</time>
-
-  {% include translation-links.html %}
-  {% for candidate in translation_candidates %}
-    {% unless page.lang == candidate.lang %}
-      <!-- Banner pointing to translations of this lesson when they exist -->
-      <div class="alert alert-warning">
-        {{ site.data.snippets.translation-target[page.lang]}}
-        {{ site.data.snippets.language-name[candidate.lang][page.lang]}}:
-        <a href="{{ candidate.url }}">{{ candidate.title }}</a>
-      </div>
-    {% endunless %}
-  {% endfor %}
 </small>

@@ -2,7 +2,7 @@
 title: "Parit ca no ses in s' arretza"
 indexing: false
 sitemap: false
-orig: offline
+reference: offline
 ---
 
 Parit chi apas pèrdiu s' acàpiu a s' arretza e custu documenti no esistit in su dispositivu cosa tua.

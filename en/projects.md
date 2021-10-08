@@ -2,6 +2,7 @@
 title: Projects
 feature_image: feature_12.png
 aside: true
+reference: projects
 ---
 
 ## AMSLA

@@ -4,6 +4,7 @@ categories:
     - MATLAB
     - Numerical solvers
     - PDE
+reference: advection-diffusion
 ---
 
 Let's implement the advection equation in the form (1):

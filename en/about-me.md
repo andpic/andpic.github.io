@@ -1,6 +1,7 @@
 ---
 title: About me
 permalink: index.html
+reference: about-me
 feature_image: feature_9.png
 ---
 
