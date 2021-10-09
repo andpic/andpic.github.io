@@ -12,3 +12,26 @@
     </div>
   </div>
 {% endif %}
+
+<script>
+  (() => {
+    "use strict";
+    // Page is loaded
+    const objectName = "feature";
+    const objects = document.getElementsByClassName(objectName);
+    Array.from(objects).map((item) => { // Start loading image
+      const img = new Image();
+      const smallImagePath = item.style.backgroundImage;
+      const largeImagePath = smallImagePath.substring(
+      smallImagePath.indexOf("(\"") + 2, smallImagePath.lastIndexOf(".")) + "-large.webp";
+      console.log("Loading feature image: " + largeImagePath);
+      img.src = largeImagePath;
+
+      // Once image is loaded replace the src of the HTML element
+      img.onload = () => {
+        console.log("Image finished loading.");
+        item.style.backgroundImage = "url(\"" + this.src + "\")";
+      };
+    });
+  })();
+</script>
