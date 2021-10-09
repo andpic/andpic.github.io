@@ -1,6 +1,6 @@
 ---
 title: Fainas
-feature_image: feature_12.png
+feature_image: feature_12.webp
 aside: true
 reference: projects
 ---

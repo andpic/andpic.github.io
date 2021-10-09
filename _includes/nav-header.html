@@ -43,12 +43,12 @@
           <a
             aria-pressed="true"
             class="btn btn-secondary nav-link active disabled"
-            role="button"><img class="language-flag" src={{ language_flag_path | absolute_url }} alt="language-flag" />
+            role="button"><img class="language-flag" height="16" width="24" src={{ language_flag_path | absolute_url }} alt="language-flag" />
           </a>
         {% else %}
           {% assign alternate_target = translation_candidates | where: "lang", lang | first %}
           {% if alternate_target %}
-            <a class="btn btn-secondary nav-link" role="button" href="{{ alternate_target.url }}"><img class="language-flag" src={{ language_flag_path | absolute_url }} alt="language-flag" />
+            <a class="btn btn-secondary nav-link" role="button" href="{{ alternate_target.url }}"><img class="language-flag" height="16" width="24" src={{ language_flag_path | absolute_url }} alt="language-flag" />
             </a>
           {% endif %}
         {% endif %}

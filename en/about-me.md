@@ -2,7 +2,7 @@
 title: About me
 permalink: index.html
 reference: about-me
-feature_image: feature_9.png
+feature_image: feature_9.webp
 ---
 
 My name's Andrea Picciau (it's pronounced _pee-cha-hu_, with the stress on the

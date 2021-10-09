@@ -2,5 +2,5 @@
 title: "Note"
 layout: blog
 reference: notes
-feature_image: "feature_14.png"
+feature_image: "feature_14.webp"
 ---

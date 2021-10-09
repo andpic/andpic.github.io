@@ -82,8 +82,7 @@ $headerMargin: 15px;
 
 .language-flag {
   max-height: 1.5rem;
-  height: 1rem;
-  width: auto;
+  aspect-ratio: attr(width) / attr(height);
   align-self: middle;
 }
 
@@ -96,6 +95,7 @@ $headerMargin: 15px;
     max-height: 4rem;
     min-height: 2rem;
     min-width: 2rem;
+    aspect-ratio: attr(width) / attr(height);
     vertical-align: middle;
   }
 }

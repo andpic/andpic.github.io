@@ -1,6 +1,6 @@
 ---
 title: "Notes"
 layout: blog
-feature_image: "feature_14.png"
+feature_image: "feature_14.webp"
 reference: notes
 ---

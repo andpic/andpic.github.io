@@ -1,6 +1,6 @@
 ---
 title: Pubricatzionis
-feature_image: feature_1.png
+feature_image: feature_1.webp
 aside: true
 reference: publications
 ---

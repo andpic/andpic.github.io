@@ -1,6 +1,6 @@
 ---
 title: Chi sono
-feature_image: feature_9.png
+feature_image: feature_9.webp
 reference: about-me
 ---
 
