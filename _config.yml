@@ -96,7 +96,7 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 lang: en # Set the site language
 title: "Andrea Picciau" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/android-chrome-192x192.png" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/logos/logo-48x48.png" # Site logo, also used in jekyll-seo-tag
 description: "I work on software for scientific computing, data science, and deep learning." # Site description and default description, also used in jekyll-seo-tag
 url: "https://andpic.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
@@ -126,14 +126,14 @@ navigation_header:
   - notes
 
 navigation_footer:
-  - title: "The views expressed here are my own and do not necessarily reflect the views of my employer."
+  - opinions
+  - copyright-notice
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   Twitter: https://twitter.com/a_picciau
   LinkedIn: https://www.linkedin.com/in/apicciau
   GitHub: https://github.com/andpic
   link: https://picciau.net
-  ResearchGate: https://www.researchgate.net/profile/Andrea-Picciau
   RSS: /feed.xml
 
 sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour

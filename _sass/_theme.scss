@@ -21,7 +21,7 @@ $headerMargin: 15px;
 .header,
 .footer {
   .nav {
-    text-align: center;
+    text-align: left;
   }
 
   .container {
@@ -135,14 +135,15 @@ $headerMargin: 15px;
   }
 
   .container {
-    @include flex-wrap(wrap);
+    @include flexbox;
+    @include flex-direction(row);
+    @include justify-content(space-between);
   }
 
   .small {
     padding-top: 0;
   }
 }
-
 
 // Pagination nav
 .nav--paginator {
@@ -559,5 +560,17 @@ pre code {
 .footer {
   .nav {
     font-size: small;
+    width: 70%;
   }
+
+  li {
+    line-height: 12px;
+  }
+}
+
+.footer--nav {
+  @include flexbox;
+  @include flex-direction(column);
+  @include flex-wrap(wrap);
+  @include justify-content(flex-start);
 }

@@ -7,7 +7,7 @@
 
       navigator
         .serviceWorker
-        .register("{{ " sw.js " | relative_url }}")
+        .register("{{ 'sw.js' | prepend: '/' | prepend: site.url }}")
         .then(registration => {
           console.log("Service Worker: registered");
         })

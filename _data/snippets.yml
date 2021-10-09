@@ -5,16 +5,36 @@ language-list:
   - it
 
 menu-lang:
-  en: assets/languages/english.svg
-  it: assets/languages/italiano.svg
-  srd: assets/languages/sardu.svg
+  en: assets/languages/english.png
+  it: assets/languages/italiano.png
+  srd: assets/languages/sardu.png
 
 about:
   en: "Andrea Picciau"
   srd: "Andria Piciau"
   it: "Andrea Picciau"
 
+index:
+  en: "Index"
+  srd: "Ìndixi"
+  it: "Indice"
+
+opinions:
+  en: "The views expressed here are my own and do not necessarily reflect the views of my employer."
+  it: "Le opinioni espresse in questo sito sono personali e non riflettono le opinioni dei miei datori di lavoro."
+  srd: "Is pensadas chi agatais in i-custu giassu funt is mias personalis e no funt is de anca traballu deu."
+
+copyright-notice:
+  en: "Whenever not specifically stated, the content in this website is released under the license Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)."
+  srd: "Candu no ddoi est scritu de manera pretzisa, su cuntènniu de i-custu giassu est donau cun licèntzia Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)."
+  it: "A meno che non specificamente dichiarato, il contentuto di questo sito è rilasciato con licenza Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)."
+
 description:
   en: "I work on software for scientific computing, data science, and deep learning."
   srd: "Traballu a programas de sa computadora po su càrculu scientìficu, scièntzia de is informus, e deep learning."
   it: "Lavoro a software per il calcolo scientifico, data science, e deep learning."
+
+no-content:
+  en: "There are no posts in this language at the moment."
+  it: "Al momento non ci sono posti in questa lingua."
+  srd: "No nc' ant scritus in i-custa lìngua po imoi."

@@ -1,8 +1,11 @@
+{% assign categories_pages = site.pages | where: "reference", "categories" %}
+{% assign curr_language_category_page = categories_pages | where: "lang", page.lang | first %}
+
 {% if page.categories %}
   {% capture categories %}
     {% for category in page.categories %}
       <span class="label  label--category">
-        <a href="{{ site.baseurl }}/categories/#{{ category | downcase | slugify }}">{{ category }}</a>
+        <a href="{{ site.baseurl }}{{ curr_language_category_page.url }}#{{ category | downcase | slugify }}">{{ category }}</a>
       </span>
       {% if forloop.last == false %},{% endif %}
     {% endfor %}
@@ -10,7 +13,7 @@
 {% elsif page.category %}
   {% capture categories %}
     <span class="label  label--category">
-      <a href="{{ site.baseurl }}/categories/#{{ page.category | downcase | slugify }}">{{ page.category }}</a>
+      <a href="{{ site.baseurl }}{{ curr_language_category_page.url }}#{{ page.category | downcase | slugify }}">{{ page.category }}</a>
     </span>
   {% endcapture %}
 {% endif %}
