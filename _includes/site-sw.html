@@ -6,7 +6,7 @@
     }
 
     navigator.serviceWorker
-      .register("{{ "/sw.js" | relative_url }}")
+      .register("{{ "../sw.js" | relative_url }}")
       .then(registration => {
         console.log("Service Worker: registered");
       })

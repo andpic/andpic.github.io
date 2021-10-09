@@ -8,3 +8,13 @@ menu-lang:
   en: assets/languages/english.svg
   it: assets/languages/italiano.svg
   srd: assets/languages/sardu.svg
+
+about:
+  en: "Andrea Picciau"
+  srd: "Andria Piciau"
+  it: "Andrea Picciau"
+
+description:
+  en: "I work on software for scientific computing, data science, and deep learning."
+  srd: "Traballu a programas de sa computadora po su càrculu scientìficu, scièntzia de is informus, e deep learning."
+  it: "Lavoro a software per il calcolo scientifico, data science, e deep learning."
