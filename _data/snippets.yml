@@ -1,10 +1,10 @@
 # Multilingual website, following https://matthewlincoln.net/2020/03/01/multilingual-jekyll.html
 language-list:
   - en
-  - it
   - srd
+  - it
 
 menu-lang:
-  en: English
-  it: Italiano
-  srd: Sardu
+  en: assets/languages/english.svg
+  it: assets/languages/italiano.svg
+  srd: assets/languages/sardu.svg

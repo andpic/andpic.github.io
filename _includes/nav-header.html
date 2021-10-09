@@ -27,29 +27,33 @@
     </button>
   </nav>
 
-  <div aria-label="Language selector" class="btn-group" role="group">
-    {% if page.reference %}
-      {% assign translation_candidates = site.pages | where: "reference", page.reference %}
-      {% if translation_candidates.size == 0 %}
-        {% assign translation_candidates = site.posts | where: "reference", page.reference %}
-      {% endif %}
-    {% endif %}
-
-    {% for lang in site.data.snippets.language-list %}
-      {% assign language_name = site.data.snippets.menu-lang[lang] %}
-
-      {% if page.lang == lang %}
-        <a
-          aria-pressed="true"
-          class="btn btn-secondary nav-link active disabled"
-          role="button">{{ language_name }}</a>
-      {% else %}
-        {% assign alternate_target = translation_candidates | where: "lang", lang | first %}
-        {% if alternate_target %}
-          <a class="btn btn-secondary nav-link" role="button" href="{{ alternate_target.url }}">{{ language_name }}</a>
+  <div aria-label="Language selector" class="language-selector" role="group">
+    <div class="language-selector-internal">
+      {% if page.reference %}
+        {% assign translation_candidates = site.pages | where: "reference", page.reference %}
+        {% if translation_candidates.size == 0 %}
+          {% assign translation_candidates = site.posts | where: "reference", page.reference %}
         {% endif %}
       {% endif %}
-    {% endfor %}
+
+      {% for lang in site.data.snippets.language-list %}
+        {% assign language_flag_path = site.data.snippets.menu-lang[lang] %}
+
+        {% if page.lang == lang %}
+          <a
+            aria-pressed="true"
+            class="btn btn-secondary nav-link active disabled"
+            role="button"><img class="language-flag" src={{ language_flag_path | absolute_url }} alt="language-flag" />
+          </a>
+        {% else %}
+          {% assign alternate_target = translation_candidates | where: "lang", lang | first %}
+          {% if alternate_target %}
+            <a class="btn btn-secondary nav-link" role="button" href="{{ alternate_target.url }}"><img class="language-flag" src={{ language_flag_path | absolute_url }} alt="language-flag" />
+            </a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 {% else %}
   {% include nav-default.html %}
