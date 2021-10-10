@@ -96,7 +96,7 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 lang: en # Set the site language
 title: "Andrea Picciau" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/logo-48x48.png" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/logos/logo-48x48.webp" # Site logo, also used in jekyll-seo-tag
 description: "I work on software for scientific computing, data science, and deep learning." # Site description and default description, also used in jekyll-seo-tag
 url: "https://andpic.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
