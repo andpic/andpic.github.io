@@ -22,9 +22,30 @@
         </li>
       {% endfor %}
     </ul>
-    <button aria-label="Menu toggle" class="button  button--nav">
-      {% include icon.html id="nav" title="Menu" %}
-    </button>
+
+    <div class="dropdown">
+      <button
+        aria-label="Menu toggle"
+        class="button  button--nav"
+        onclick="showContent()">
+        {% include icon.html id="nav" title="Menu" %}
+      </button>
+      <div class="dropdown-content" id="drop-cont">
+        {% for item in site.navigation_header %}
+
+          {% assign pages_curr_reference = site.pages | where: "reference", item %}
+          {% assign page_to_link = pages_curr_reference | where: "lang", page.lang | first %}
+
+          {% if item.url contains '://' %}
+            {% assign url = page_to_link.url %}
+          {% else %}
+            {% assign url = page_to_link.url | relative_url %}
+          {% endif %}
+
+          <a href="{{ url }}">{{ page_to_link.title }}</a>
+        {% endfor %}
+      </div>
+    </div>
   </nav>
 
   <div aria-label="Language selector" class="language-selector" role="group">
@@ -60,36 +81,60 @@
 {% endif %}
 
 <script type="text/javascript">
-  // Get list and button
-  const navList = document.querySelector(".header .list--nav");
-  const button = document.querySelector(".header .button--nav");
+
+  /* When the user clicks on the button, toggle between hiding and showing the
+   dropdown content */
+  function showContent() {
+    document
+      .querySelector(".dropdown-content")
+      .style
+      .display = "block";
+  }
+
+  function toggleBarElementOn(barElement) {
+    barElement.classList.remove("nav--hide");
+    barElement.classList.add("nav--show");
+  }
+
+  function toggleBarElementOff(barElement) {
+    barElement.classList.remove("nav--show");
+    barElement.classList.add("nav--hide");
+  }
 
   // Hide nav and apply toggle
-  const collapseNav = () => {
-    if (document.body.clientWidth < 640) {
-      navList.style.setProperty("--listHeight", `-${
-        navList.offsetHeight
-      }px`);
-    } else {
-      navList.removeAttribute("style");
-    }
+  const collapseNav = () => { // Get list and button
+    const navList = document.querySelector(".list.list--nav");
+    const button = document.querySelector(".dropdown");
 
-    button.onclick = () => {
-      navList.style.setProperty("transition", `margin .1s`);
-      if (navList.style.getPropertyValue("--listHeight")) {
-        navList.style.removeProperty("--listHeight");
-      } else {
-        navList.style.setProperty("--listHeight", `-${
-          navList.offsetHeight
-        }px`);
-      }
+    if (document.body.clientWidth < 640) {
+      toggleBarElementOff(navList);
+      toggleBarElementOn(button);
+    } else {
+      toggleBarElementOn(navList);
+      toggleBarElementOff(button);
     }
   }
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function (event) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    if (
+      event.target.tagName != "BUTTON" &&
+      event.target.tagName != "svg" &&
+      event.target.tagName != "use"
+    ) {
+      var i;
+      for (i = 0; i < dropdowns.length; i = i + 1) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.style.display != "none") {
+          openDropdown.style.display = "none";
+        }
+      }
+    };
+  };
 
   collapseNav();
 
   // Check on resize if to collapse nav
-  window.addEventListener("resize", () => {
-    collapseNav();
-  });
+  window.onresize = collapseNav;
 </script>
