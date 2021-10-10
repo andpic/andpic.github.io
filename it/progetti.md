@@ -6,7 +6,13 @@ reference: projects
 ---
 
 ## AMSLA
-**Algorithm-architecture matching for sparse linear algebra**. AMSLA is a sparse
+**Algorithm-architecture matching for sparse linear algebra**. AMSLA è una
+libreria di algebra lineare sparsa per processory many-core e multi-core che
+ottimizza automaticamente le strutture dati e i loro parametri a seconda
+dell'architettura del processore.
+
+
+is a sparse
 linear algebra library for many-core and multi-core processors that
 automatically optimizes the data structures and their parameters based on the
 processors' architectures.

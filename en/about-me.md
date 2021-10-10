@@ -20,3 +20,5 @@ College London](https://www.imperial.ac.uk), where I worked on low-level
 optimizations of sparse linear algebra algorithms for GPUs.
 
 You can find my complete CV on [LinkedIn](https://www.linkedin.com/in/apicciau).
+
+<center>{% include nav-social.html %}</center>

@@ -19,3 +19,5 @@ livellu bàsciu de algoritimus de àlgebra lineari spainada po GPUs.
 
 Su CV cosa mia ddu podeis agatai in
 [LinkedIn](https://www.linkedin.com/in/apicciau/).
+
+<center>{% include nav-social.html %}</center>

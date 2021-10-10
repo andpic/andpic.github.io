@@ -20,3 +20,5 @@ livello per algoritmi di algebra lineare sparsa su GPU.
 
 Puoi trovare il mio CV completo su
 [LinkedIn](https://www.linkedin.com/in/apicciau).
+
+<center>{% include nav-social.html %}</center>
