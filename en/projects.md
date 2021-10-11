@@ -48,3 +48,4 @@ of some optimization problems.
 *I own the copyright of all the images in this gallery. You're not allowed to
 download, modify, or share these images.*
 
+*[Project website](https://andpic.github.io/en/slideshow)*
