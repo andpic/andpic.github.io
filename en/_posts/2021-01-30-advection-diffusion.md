@@ -7,6 +7,7 @@ categories:
 reference: advection-diffusion
 excerpt: "Let's implement the advection equation"
 mathjax: true
+comments: true
 ---
 
 <style type="text/css">.S0 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 28.8px; min-height: 0px; white-space: pre-wrap; color: rgb(192, 76, 11); font-weight: 400; text-align: left;  }

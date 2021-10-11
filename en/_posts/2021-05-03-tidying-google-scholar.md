@@ -7,6 +7,7 @@ reference: tidying-google-scholar
 excerpt: "Lately, I've realised that the diversity of my reads since the start
 of the pandemic has increased. This has got to the point that I feel like my
 Google Scholar queries don't reflect everything I'm interested in these days."
+comments: true
 ---
 
 Lately, I've realised that the diversity of my reads since the start of the

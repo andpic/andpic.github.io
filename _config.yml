@@ -102,7 +102,7 @@ url: "https://andpic.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/apicciau/andpic.github.io"
 email: "apicciau@mail.com"
-disqus: "andpic.disqus.com" # Blog post comments, uncomment the option and set the site ID from your Disqus account
+disqus: "andpic" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
 google_analytics: "G-ZWEXPYC2VH"
 # google_analytics_anonymize_ip: ""
