@@ -11,46 +11,46 @@ libreria di algebra lineare sparsa per processory many-core e multi-core che
 ottimizza automaticamente le strutture dati e i loro parametri a seconda
 dell'architettura del processore.
 
+AMSLA analizza la performance e il comportamento numerico degli algorithmi di
+algebra lineare sparsa su processori many-core e multi-core. Quando questi
+algorithmi vengono eseguiti all'interno di tali processori, il pattern di
+accesso alla memoria è irregolare e perciò la performance dell'applicazione è
+completamente dipendente dalla struttura del problema.
 
-is a sparse
-linear algebra library for many-core and multi-core processors that
-automatically optimizes the data structures and their parameters based on the
-processors' architectures.
+AMSLA seleziona la migliore struttura dati che rappresenti la matrice sparsa del
+problema, e ne ottimizza i parametri compatibilmente all'architettura del
+processore, ottenendo alte performance.
 
-AMSLA explores the performance and numerics of sparse linear algebra on
-many-core and multi-core computer processors. Inside these processors, when
-sparse linear algebra algorithms are executed, the pattern of accesses to memory
-is irregular. Because of this, the application's performance is completely
-dependent on the problem's structure.
-
-AMSLA selects the best data structure representing the problem's sparse matrix
-and optimizes its parameters, matching them to the processor's architecture, and
-achieving high performance.
-
-*[Project website](http://github.com/andpic/amsla)*
+*[Sito del progetto](http://github.com/andpic/amsla)*
 
 
-## Smart building optimization problems
-A collection of mathematical optimization problems on smart buildings.
+## Problemi di ottimizzazione per edifici intelligenti
+Una collezione di problemi matematici sugli edifici intelligenti (*smart 
+building*).
 
-These are mixed-integer linear optimization problems where one wants to minimize
-the cost of providing power to either a single house or a set of flats. In the
-first case, the house has a photovoltaic panel and a battery, in the second case
-the photovoltaic panel is shared among the flats, and each flat has a battery.
+Si tratta di problemi di ottimizzazione misti interi-lineari (*MILP*) in cui si
+vuole minimizzare il costo della potenzia per una singola abitazione o un
+insieme di appartamenti. Nel primo caso, la casa è fornita di un pannello
+fotovoltaico e di una batteria, mentre nel secondo caso il pannello fotovoltaico
+è comune a tutti gli appartamenti, ma ogni appartamento ha la propria battiera.
 
-The problems' parameters can be changed to explore complexity and solution time.
+I parametri dei problemi si possono cambiare per esplorare la complessità del
+problema e il tempo di soluzione.
 
-*[Project website](http://github.com/andpic/smart-building-optimization)*
+*[Sito del progetto](http://github.com/andpic/smart-building-optimization)*
 
 
-## Data visualisation: studying the structure behind the maths
-A data visualisation project based on sparse matrices.
+## Visualizzazione di dati: studiando la struttura dietro la matematica
+Un progetto di visualizzazione dati basato su matrici sparse.
 
-Data visualisation tools can help better understand the structure of sparse
-matrices in terms of the shape of their graph representation. Using these tools,
-I represented and studied the structure of matrices that arise in the solution
-of some optimization problems.
+Gli strumenti di visualizzazione dati possono aiutare a migliorare la
+comprensione delle matrici sparse per ciò che riguarda la loro rappresentazione
+in grafo. Utilizzando questi strumenti, ho rappresentato e studiato la struttura
+di alcune matrici che compaiono quando si risolvono alcuni problemi di
+ottimizzazione.
 
-*I own the copyright of all the images in this gallery. You're not allowed to
-download, modify, or share these images.*
+*Possiedo il copyright su tutte le immagini di questa galleria. Tutti i diritti sono
+riservati.*
+
+*[Sito del progetto](https://andpic.github.io/en/slideshow)*
 

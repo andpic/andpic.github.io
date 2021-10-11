@@ -1,50 +1,52 @@
 ---
-title: Fainas
-feature_image: feature_12.webp
-aside: true
-reference: projects
+title: Fainas feature_image: feature_12.webp aside: true reference: projects
 ---
 
 ## AMSLA
-**Algorithm-architecture matching for sparse linear algebra**. AMSLA is a sparse
-linear algebra library for many-core and multi-core processors that
-automatically optimizes the data structures and their parameters based on the
-processors' architectures.
+**Algorithm-architecture matching for sparse linear algebra**. AMSLA est una
+libreria de àlgebra lineari spainada po processoris *many-core* e *multi-core*
+chi otimisat sa strutura de informus a segunda de s'architetura de is
+processoris.
 
-AMSLA explores the performance and numerics of sparse linear algebra on
-many-core and multi-core computer processors. Inside these processors, when
-sparse linear algebra algorithms are executed, the pattern of accesses to memory
-is irregular. Because of this, the application's performance is completely
-dependent on the problem's structure.
+AMSLA spriculat sa lestresa e su cumportamentu numèricu de is algorìtimus de
+àlgebra lineari spainada asuba de processoris *many-core* e *multi-core*. Candu
+custus algorìtimus traballant aìnturu de processoris de i-custa calidadi, is
+informus funt buscaus de manera no arregulari. Po custu, sa lestresa de s'
+aplicatzioni dependit totu de sa strutura de su problema.
 
-AMSLA selects the best data structure representing the problem's sparse matrix
-and optimizes its parameters, matching them to the processor's architecture, and
-achieving high performance.
+AMSLA sceberat sa mellus strutura de informus chi assoghit sa matrici spainada
+de su problema, arrelatendi-dda a s' architetura de su processori, e otennit
+lestresa bona.
 
-*[Project website](http://github.com/andpic/amsla)*
-
-
-## Smart building optimization problems
-A collection of mathematical optimization problems on smart buildings.
-
-These are mixed-integer linear optimization problems where one wants to minimize
-the cost of providing power to either a single house or a set of flats. In the
-first case, the house has a photovoltaic panel and a battery, in the second case
-the photovoltaic panel is shared among the flats, and each flat has a battery.
-
-The problems' parameters can be changed to explore complexity and solution time.
-
-*[Project website](http://github.com/andpic/smart-building-optimization)*
+*[Giassu de sa faina](http://github.com/andpic/amsla)*
 
 
-## Data visualisation: studying the structure behind the maths
-A data visualisation project based on sparse matrices.
+## Problemas de otimisadura po fàbricus abistus
+Un' arregorta de problemas matemàticus de otimisadura chi pertocant fàbricus
+abistus (*smart buildings*).
 
-Data visualisation tools can help better understand the structure of sparse
-matrices in terms of the shape of their graph representation. Using these tools,
-I represented and studied the structure of matrices that arise in the solution
-of some optimization problems.
+Custus funt problemas de otimisadura amesturaus interus-linearis (*MILP*), anca
+si bolit minimisai su costu de portai potèntzia lètrica a una domu sceti o a
+unus cantu apartamentus. In sa primu chistioni, sa domu tenit unu pranu
+foto-voltàicu e una bateria. In sa segundu chistioni, s' imperu de su pranu
+foto-voltàicu est partziu intra is apartamentus e dònnia apartamentu tenit sa
+bateria cosa sua.
 
-*I own the copyright of all the images in this gallery. You're not allowed to
-download, modify, or share these images.*
+Is paràmetrus de is problemas podint essi cambiaius po spriculai sa
+complessidadi e su tempu de arresolvidura.
 
+*[Giassu de sa faina](http://github.com/andpic/smart-building-optimization)*
+
+
+## Amostai informus: studiendi sa strutura apalas de sa matemàtica
+Una faina de amostai informus de matricis spainadas.
+
+Is ainas po amostai informus si podint agiudai a cumprendi mellus sa strutura de
+is matricis spainadas, po su chi pertocat s' assogadura a grafu. Imperendi
+custas ainas, apu amostau e studiau sa strutura de matricis bogadas arresolvendi
+unus cantu problemas de otimisadura.
+
+*Tengu is deretus de còpia de totus is màginis in i-custa galleria. Totu is
+deretus funt arriservaus.*
+
+*[Giassu de sa faina](https://andpic.github.io/en/slideshow)*

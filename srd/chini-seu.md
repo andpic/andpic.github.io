@@ -6,7 +6,7 @@ reference: about-me
 
 Mi nant Andrea Picciau e traballu cun programas po su càrculu scientìficu e
 architeturas parallelas comenti GPU, CPU _multi-core_, e _cluster_. Pruschetotu
-seu interessau a àlgebra lineari e algoritimus po otimisadura.
+seu interessau a àlgebra lineari e algorìtimus po otimisadura.
 
 Seu _senior software engineer_ anca est MathWorks UK, in sa truma de su Parallel
 Computing Toolbox. Seu arresponsàbili de sa calidadi de is programas de GPU de
