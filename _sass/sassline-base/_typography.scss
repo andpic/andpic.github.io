@@ -401,3 +401,8 @@ a {
     font-feature-settings: 'onum', 'kern';
   }
 }
+
+.MathJax span {
+  color: $bodyColour;
+  @include fontsize(zeta, all);
+}
