@@ -5,6 +5,15 @@ aside: true
 reference: projects
 ---
 
+## Sardinia Sustainabiity
+Sardinia Sustainability is initiative that aims to
+put together all people working on sustainable development in Sardinia through data science. It aims
+to become a network of professionals and a repository of interesting projects. I'm 
+the founder and coordinator of this initiative.
+
+*[Project website](http://sardiniasustainability.github.com)*
+
+
 ## AMSLA
 **Algorithm-architecture matching for sparse linear algebra**. AMSLA is a sparse
 linear algebra library for many-core and multi-core processors that
