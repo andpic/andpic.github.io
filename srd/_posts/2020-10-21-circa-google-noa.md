@@ -13,8 +13,7 @@ fai adelantamentu sustenìbili in Sardìnnia imperendi *data science* e is
 tennologias noas. Traballendi a i-custa faina, mi-ndi seu agatau ca is circas de
 Google Scholar chi tengu no arrespetant prus su chi fatzu deu fitianamenti.
 
-In su benidoru, a provai custa circa:
-```
-parallel numerical sparse matrix optimization graph sustainability environment pollution economics algorithm model
-```
+In su benidori, apu a provai custa circa:
+> parallel numerical sparse matrix optimization graph sustainability environment
+> pollution economics algorithm model
 eus a biri chi custa torrat arresultaus prus interessantis de is àteras...
