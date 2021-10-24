@@ -11,7 +11,7 @@ scièntzia de is informus. Bolit essi un' arretza de espertus e unu magasinu de
 progetus interessantis. Seu su chi custa faina dd' at strantaxada e su
 coordinadori puru.
 
-*[Giassu de sa faina](http://sardiniasustainability.github.com)*
+*[Giassu de sa faina](http://sardiniasustainability.github.io)*
 
 ## AMSLA
 **Algorithm-architecture matching for sparse linear algebra**. AMSLA est una

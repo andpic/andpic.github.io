@@ -11,7 +11,7 @@ che lavorano allo sviluppo sostenibile in Sardegna utilizzando le tecniche
 di *data science*. Vuole essere una rete di tecnici e un contenitore di progetti
 interessanti. Ho fondato questa iniziativa e ne sono il coordinatore.
 
-*[Sito del progetto](http://sardiniasustainability.github.com)*
+*[Sito del progetto](http://sardiniasustainability.github.io)*
 
 
 ## AMSLA
