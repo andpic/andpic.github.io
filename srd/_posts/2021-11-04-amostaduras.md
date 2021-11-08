@@ -23,26 +23,14 @@ fatu totu.
 La' una pariga de amostaduras chi apu fatu deu comenti fainas de su cursu.
 
 Un' amostadura de is migrantis mortus o pèrdius in su mundu de su 2014 a su 2020.
-<iframe id="migrants" width="100%" src="https://vizhub.com/andpic/0ffe08fc63f547ad9a24e6d6f529827c?mode=embed" title="Migrantis cun spumadori" frameborder="0" ></iframe>
+
+{% include vizhub.html title="Migrantis cun spumadori" id="0ffe08fc63f547ad9a24e6d6f529827c" aspect_ratio="1.2" %}
 
 Un' amostadura de is mortus de Coronavirus in is primus mesis de su 2020.
 
-<iframe id="covidDeaths" width="100%" src="https://vizhub.com/andpic/9dfe83a861bb45318e3cf77d83ff5f8f?mode=embed" title="Mortus de COVID in su mundu po paisu" frameborder="0" ></iframe>
+{% include vizhub.html title="Mortus de COVID in su mundu po paisu" id="9dfe83a861bb45318e3cf77d83ff5f8f" aspect_ratio="1.92" %}
 
 Speru ca custu m' agiudit finsas po sa faina de *[Sardinia
 Sustainability](https://sardiniasustainability.github.io)*, chi est adelantendi-sì abellu
 abellu.
-
-<script>
-let migrants = document.getElementById('migrants');
-const migrantsAspectRatio = 960/800;
-migrants.onload = () => {
-    migrants.style.height = migrants.parentElement.clientWidth/migrantsAspectRatio + 'px';
-}
-
-let covidDeaths = document.getElementById('covidDeaths');
-const covidDeathsAspectRatio = 960/500;
-covidDeaths.onload = () => {
-    covidDeaths.style.height = covidDeaths.parentElement.clientWidth/covidDeathsAspectRatio + 'px';
-}
 </script>

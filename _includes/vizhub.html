@@ -1,0 +1,7 @@
+<div class="visualisation">
+  <iframe id="{{ include.id }}" width="100%" src="https://vizhub.com/andpic/{{ include.id }}?mode=embed" title="{{ include.title }}" frameborder="0" onload=""></iframe>
+</div>
+
+<script>
+  document.getElementById("{{ include.id }}").onload = resizeIframe("{{ include.id }}", {{ include.aspect_ratio }});
+</script>
