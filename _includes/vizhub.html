@@ -3,5 +3,10 @@
 </div>
 
 <script>
-  document.getElementById("{{ include.id }}").onload = resizeIframe("{{ include.id }}", {{ include.aspect_ratio }});
+  document.getElementById("{{ include.id }}").onload = () => {
+    let frame = document.getElementById("{{ include.id }}");
+    frame.style.height = Math.round(
+      frame.parentElement.clientWidth / {{ include.aspect_ratio }}
+    ) + "px";
+  }
 </script>
