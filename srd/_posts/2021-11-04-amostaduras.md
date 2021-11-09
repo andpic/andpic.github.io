@@ -30,7 +30,6 @@ Un' amostadura de is mortus de Coronavirus in is primus mesis de su 2020.
 
 {% include vizhub.html title="Mortus de COVID in su mundu po paisu" id="9dfe83a861bb45318e3cf77d83ff5f8f" aspect_ratio="1.92" %}
 
-Speru ca custu m' agiudit finsas po sa faina de *[Sardinia
-Sustainability](https://sardiniasustainability.github.io)*, chi est adelantendi-sì abellu
+Speru ca custu m' agiudit finsas po sa faina de [Sardinia
+Sustainability](https://sardiniasustainability.github.io), chi est adelantendi-sì abellu
 abellu.
-</script>
