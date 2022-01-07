@@ -13,6 +13,9 @@
               <h2>
                 <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
               </h2>
+              <h4>
+                <a href="{{ site.baseurl }}{{ page.url }}">{{ page.subtitle }}</a>
+              </h4>
               {% include post-meta.html %}
               {{ page.excerpt | markdownify | truncatewords: 60 }}
 
@@ -39,6 +42,9 @@
               <h2>
                 <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
               </h2>
+              <h4>
+                <a href="{{ site.baseurl }}{{ page.url }}">{{ page.subtitle }}</a>
+              </h4>
               {% include post-meta.html %}
               {{ page.excerpt | markdownify | truncatewords: 60 }}
 
