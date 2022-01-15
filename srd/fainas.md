@@ -4,14 +4,14 @@ feature_image: feature_12.webp
 aside: true 
 reference: projects
 ---
-## Sardinia Sustainabiity
-Sardinia Sustainability est una faina chi bolit ponni impari totu is
+## Sustainable Sardinia
+Sustainable Sardinia est una faina chi bolit ponni impari totu is
 chi traballant a s' adelantamentu sustenìbili in Sardìnnia imperendi sa
 scièntzia de is informus. Bolit essi un' arretza de espertus e unu magasinu de
 progetus interessantis. Seu su chi custa faina dd' at strantaxada e su
 coordinadori puru.
 
-*[Giassu de sa faina](http://sardiniasustainability.github.io)*
+*[Giassu de sa faina](http://sustainablesardinia.github.io)*
 
 ## AMSLA
 **Algorithm-architecture matching for sparse linear algebra**. AMSLA est una

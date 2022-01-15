@@ -5,13 +5,13 @@ aside: true
 reference: projects
 ---
 
-## Sardinia Sustainabiity
-Sardinia Sustainability is an initiative that aims to
+## Sustainable Sardinia
+Sustainable Sardinia is an initiative that aims to
 put together all people working on sustainable development in Sardinia through data science. It aims
 to become a network of professionals and a repository of interesting projects. I'm 
 the founder and coordinator of this initiative.
 
-*[Project website](http://sardiniasustainability.github.io)*
+*[Project website](http://sustainablesardinia.github.io)*
 
 
 ## AMSLA

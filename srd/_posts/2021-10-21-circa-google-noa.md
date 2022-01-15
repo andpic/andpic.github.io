@@ -8,7 +8,7 @@ excerpt: "Is circas mias no torrant prus a su chi m' interessat diaderus. Circau
 comments: true
 ---
 
-Ariseru apu acabau su giassu de Sardinia Sustainability, sa faina cosa mia po
+Ariseru apu acabau su giassu de Sustainable Sardinia, sa faina cosa mia po
 fai adelantamentu sustenìbili in Sardìnnia imperendi *data science* e is
 tennologias noas. Traballendi a i-custa faina, mi-ndi seu agatau ca is circas de
 Google Scholar chi tengu no arrespetant prus su chi fatzu deu fitianamenti.
