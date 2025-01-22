@@ -1,9 +1,9 @@
 title: Andrea Picciau # your name (or website title) here
 logo: "/images/logo.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  I am a senior software engineer specializing in DevOps and API development for AI.
-  <br><br>
-  At MathWorks UK, I contribute to the Parallel Computing Toolbox team by working on the testing infrastructure for MATLAB's GPU software, focusing on numerical algorithms and deep learning. My role involves enhancing testing infrastructure, reducing technical debt, and improving GPU acceleration support, while also expanding my expertise in data science to drive innovation and quality in software testing.
+  I am a senior software engineer specializing in DevOps and API development for AI applications.
+  <br><br> 
+  At MathWorks UK, I work on the Parallel Computing Toolbox team, enhancing the testing infrastructure for MATLAB's GPU software, particularly in deep learning. My role includes reducing technical debt, improving GPU acceleration support, and expanding my data science expertise to drive innovation and quality in software testing.
   <br><br>
   I hold a PhD in Electronic Engineering from Imperial College London, where I optimized sparse linear algebra algorithms for GPUs.
   <br><br>
