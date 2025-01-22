@@ -1,9 +1,11 @@
 title: Andrea Picciau # your name (or website title) here
 logo: "/images/logo.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  I am a senior software engineer specializing in scientific computing and parallel computer architectures like GPUs, multi-core CPUs, and computer clusters. At MathWorks UK, I contribute to the Parallel Computing Toolbox team by working on the testing infrastructure for MATLAB's GPU software, focusing on numerical algorithms and deep learning.
+  I am a senior software engineer specializing in DevOps and API development for AI.
   <br><br>
-  I hold a PhD in Electronic Engineering from Imperial College London, where I optimized sparse linear algebra algorithms for GPUs. My role involves enhancing testing infrastructure, reducing technical debt, and improving GPU acceleration support, while also expanding my expertise in data science to drive innovation and quality in software testing.
+  At MathWorks UK, I contribute to the Parallel Computing Toolbox team by working on the testing infrastructure for MATLAB's GPU software, focusing on numerical algorithms and deep learning. My role involves enhancing testing infrastructure, reducing technical debt, and improving GPU acceleration support, while also expanding my expertise in data science to drive innovation and quality in software testing.
+  <br><br>
+  I hold a PhD in Electronic Engineering from Imperial College London, where I optimized sparse linear algebra algorithms for GPUs.
   <br><br>
 linkedin: apicciau
 remote_theme: pages-themes/minimal@v0.2.0
