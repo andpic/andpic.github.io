@@ -6,7 +6,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   At MathWorks UK, I work on the Parallel Computing Toolbox team, enhancing the testing infrastructure for MATLAB's GPU software, particularly in deep learning. My role includes reducing technical debt, improving GPU acceleration support, and expanding my data science expertise to drive innovation and quality in software testing.
   <br><br>
   I hold a PhD in Electronic Engineering from Imperial College London, where I optimized sparse linear algebra algorithms for GPUs.
-  <br><br>
+
 linkedin: apicciau
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
