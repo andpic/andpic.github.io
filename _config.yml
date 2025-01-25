@@ -1,5 +1,6 @@
 title: Andrea Picciau # your name (or website title) here
 logo: "/images/logo.png?raw=true" # your photo (or logo) here
+favicon: "/images/favicon.ico"
 description: > # your text below (remove <br> elements if you don't need line breaks)
   I am a senior software engineer specializing in DevOps for AI applications.
   <br><br> 
